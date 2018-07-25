@@ -1,7 +1,7 @@
 import React from 'react';
 
 import classes from './Cockpit.css';
-import ReactAux from '../../hoc/ReactAux';
+import Auxiliary from '../../hoc/Auxiliary';
 
 const cockpit = (props) => {
   let assignedClasses = [];
@@ -19,13 +19,13 @@ const cockpit = (props) => {
   }
 
   return (
-    <ReactAux>
+    <Auxiliary>
       <h1>{ props.appTitle }</h1>
       <p className={ assignedClasses.join(' ') }>This is really working!</p>
       <button
         className={ btnClass }
         onClick={ props.clicked }>Toggle Persons</button>
-    </ReactAux>
+    </Auxiliary>
   );
 };
 
